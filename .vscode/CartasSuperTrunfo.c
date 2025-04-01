@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 
 int main() {
@@ -14,37 +12,37 @@ int main() {
     printf("\nDigite o estado da primeira carta (A-H): ");
     scanf(" %c", &estado1);
     printf("\nDigite o código da primeira carta (ex: A01): ");
-    scanf(" %3s", &codigo1);
+    scanf("%3s", &codigo1);
     getchar(); // Limpar buffer
-    printf("\nDigite o nome da cidade: ");
+    printf("Digite o nome da cidade: \n");
     fgets(nomeCidade1, sizeof(nomeCidade1), stdin);
-    printf("\nDigite a população: ");
+    printf("Digite a população: \n");
     scanf(" %lu", &populacao1);
-    printf("\nDigite a área (em km²): ");
+    printf("Digite a área (em km²): \n");
     scanf(" %f", &area1);
-    printf("\nDigite o PIB (em bilhões de reais): ");
+    printf("Digite o PIB (em bilhões de reais): \n");
     scanf(" %f", &pib1);
-    printf("Digite o número de pontos turísticos: ");
+    printf("Digite o número de pontos turísticos: \n");
     scanf(" %d", &pontosTuristicos1);
     
     densidade1 = area1 != 0 ? populacao1 / area1 : 0;
     pibPerCapita1 = populacao1 != 0 ? (pib1 * 1e9) / populacao1 : 0;
     superPoder1 = populacao1 + area1 + (pib1 * 1e9) + pontosTuristicos1 + pibPerCapita1 + (densidade1 != 0 ? 1.0f / densidade1 : 0);
     
-    printf("\nDigite o estado da segunda carta (A-H): ");
+    printf("Digite o estado da segunda carta (A-H): \n");
     scanf(" %c", &estado2);
-    printf("\nDigite o código da segunda carta (ex: A01): ");
-    scanf(" %3s", &codigo2);
+    printf("Digite o código da segunda carta (ex: A01): \n");
+    scanf(" %s", &codigo2);
     getchar(); // Limpar buffer
-    printf("\nDigite o nome da cidade: ");
+    printf("Digite o nome da cidade: \n");
     fgets(nomeCidade2, sizeof(nomeCidade2), stdin);
-    printf("\nDigite a população: ");
+    printf("Digite a população: \n");
     scanf(" %lu", &populacao2);
-    printf("\nDigite a área (em km²): ");
+    printf("Digite a área (em km²): \n");
     scanf(" %f", &area2);
-    printf("\nDigite o PIB (em bilhões de reais): ");
+    printf("Digite o PIB (em bilhões de reais): \n");
     scanf(" %f", &pib2);
-    printf("\nDigite o número de pontos turísticos: ");
+    printf("Digite o número de pontos turísticos: \n");
     scanf(" %d", &pontosTuristicos2);
     
     densidade2 = area2 != 0 ? populacao2 / area2 : 0;
