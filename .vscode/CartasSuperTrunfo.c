@@ -12,7 +12,7 @@ int main() {
     printf("\nDigite o estado da primeira carta (A-H): ");
     scanf(" %c", &estado1);
     printf("\nDigite o código da primeira carta (ex: A01): ");
-    scanf("%3s", &codigo1);
+    scanf("%s", &codigo1);
     getchar(); // Limpar buffer
     printf("Digite o nome da cidade: \n");
     fgets(nomeCidade1, sizeof(nomeCidade1), stdin);
